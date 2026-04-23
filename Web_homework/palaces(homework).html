@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>논산 딸기 축제</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+  padding: 10px;
+  background: #fdfcf5;
+  margin: 0;
+}
+
+/* Header - 업로드한 Night 사진 활용 */
+.header {
+  padding: 80px 30px;
+  text-align: center;
+
+  /* 배경 이미지 경로 수정 */
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/Night.jpg"); 
+  background-size: cover;
+  background-position: center 40%;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.header h1 {
+  font-size: 55px;
+  margin: 0;
+  letter-spacing: 5px;
+}
+
+.header p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Navigation Bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ff6f9a; /* 딸기 색상 */
+  position: sticky; /* 스크롤 시 상단 고정 */
+  top: 0;
+  z-index: 1000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.topnav a:hover {
+  background-color: #ff3838;
+  color: white;
+}
+
+/* Layout Columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 70%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 30%;
+  padding-left: 20px;
+}
+
+/* Image Styling */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  margin-top: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+}
+.card strong {
+  color: #c9325f;
+  font-weight: bold;
+  text-shadow: 1px 1px plum;
+}
+
+.card h2 {
+  font-size: 28px;
+  color: #1a2a3a;
+  border-left: 5px solid #fc3678;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: #1a2a3a;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.card1 {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+}
+
+.card1 h2 {
+  font-size: 28px;
+  color: #1a2a3a;
+  border-left: 5px solid #fc3678;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.card1 p::first-letter {
+  color: #ff6f9a;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.card1 img:first-of-type {
+  width: 90%;
+  margin: 0 auto;   /* 가운데 정렬 */
+  display: block;
+
+}
+/* Footer */
+.footer {
+  padding: 30px;
+  text-align: center;
+  background: #ff83a8;
+  color: #000000;
+  margin-top: 30px;
+  line-height: 1.6;
+}
+
+/* Responsive design 
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+  */
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🍓논산 딸기 축제🍓</h1>
+  <p>대한민국 딸기 산업의 중심, 논산 딸기 축제🍓</p>
+</div>
+
+<div class="topnav">
+  <a href="#">논산딸기축제 소개</a>
+  <a href="#">논산딸기축제 안내</a>
+  <a href="#">행사 일정</a>
+  <a href="#" style="float:right">로그인</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card1">
+      <h2>논산 딸기 축제</h2>
+      <img src="images/strawberry.jpg" alt="딸기 사진"/>
+      <p style="line-height: 1.8; margin-top: 20px;">
+        <strong>논산</strong>은 전국적인 딸기 주산지로서 안정적인 생산 기반과 유통 체계를 갖추고 있으며,
+        이를 바탕으로 농업, 가공, 관광이 연계된 산업형 축제로 논산딸기축제를 운영하고 있습니다. 축제는 딸기 판매 및 시식,
+        체험 프로그램, 공연 및 전시 행사 등 구성되어있고 지역 농가와 소상공인이 직접 참여하는 구조로 추진되고 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>논산 딸기 축제의 마스코트🍓</h2>
+      <img src="images/mascoat.jpg" alt="딸기 축제 마스코트">
+      <p style="line-height: 1.8; margin-top: 20px;">
+        논산문화관광재단은 딸기 축제의 경쟁력 강화를 위한 브랜드 ip 구축의 일환으로<strong> 마스코트</strong>를 공식 캐릭터로 확정했습니다.
+        마스코트는 스윗벨, 비타벨, 킹스벨로 구성된 딸기 삼총사이고, 달콤하고 싱그러운 딸기 이미지를 친근하고 밝게 구현해 어린이부터 성인까지 호불호 없도록 설계했습니다.
+    </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>🍓행사 소식🍓</h3>
+      <p>현재 2026년도 딸기 축제는 마무리되었습니다. 내년을 기대해주세요!</p>
+    </div>
+    <div class="card">
+      <h3>🍴주변 맛집🍴</h3>
+      <ul style="padding-left: 20px; line-height: 2;">
+        <li>알바노</li>
+        <li>뷰포인트 카페</li>
+        <li>신동회관</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🚩주변 정보🚩</h3>
+      <ul style="padding-left: 20px; line-height: 2;">
+        <li>연산시장</li>
+        <li>논산명재고택</li>
+        <li>딸기향농촌테마공원</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🎤행사 일정🎤</h3>
+      <p>2026년 3월 26(목) ~ 2026년 3월 29일(일)까지</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>(32983)충청남도 논산시 관촉동 339-1 논산시민가족공원 <br>
+  대표번호: 041-730-2982 | 주최: 논산시, 논산문화관광재단 후원 : 문화체육관광부, 충청남도</p>
+</div>
+
+</body>
+</html>
